@@ -29,6 +29,3 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn test; cat ./target/surefire-reports/emailable-report.html
-
-    - name: Server-side render
-        uses: brycedorn/react-snap-action@v1.0.2
