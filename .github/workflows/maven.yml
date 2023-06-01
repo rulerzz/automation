@@ -37,3 +37,19 @@ jobs:
       with:
         # The HTML file you want to preview, relative to the root of the repo
         html_file: ./target/surefire-reports/emailable-report.html
+
+    - name: HTML/CSS to Image
+      # You may pin to the exact commit or the version.
+      # uses: htmlcsstoimage/action@b8b43782f7b498d54f809adb9db525a275dd42d0
+      uses: htmlcsstoimage/action@v1
+      with:
+        # Your HCTI API ID
+        hcti_user_id:
+        # Your HCTI API Key. Set this using a Secret
+        hcti_api_key:
+        # The HTML for your image
+        html: ./target/surefire-reports/emailable-report.html
+        # The CSS for your image
+        css: # optional, default is
+        # The Google fonts to be loaded for your image
+        google_fonts: # optional
