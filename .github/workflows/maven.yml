@@ -29,3 +29,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn test; cat ./target/surefire-reports/emailable-report.html
+
+    - name: HTML Preview
+      # You may pin to the exact commit or the version.
+      # uses: pavi2410/html-preview-action@9420cd81fbbe0035f59a39536ea5a0443daffa37
+      uses: pavi2410/html-preview-action@v2
+      with:
+        # The HTML file you want to preview, relative to the root of the repo
+        html_file: ./target/surefire-reports/emailable-report.html
