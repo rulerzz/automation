@@ -30,7 +30,7 @@ public class AutomationApplicationTests extends AbstractTestNGSpringContextTests
 
         String Actual = response.extract().asString();
         System.out.println("Result :"+Actual);
-        Assert.assertEquals("Hello World, Spring Boot!", Actual);
+        Assert.assertEquals("Hello World, Spring Boot! New commit", Actual);
     }
 
     @Test
