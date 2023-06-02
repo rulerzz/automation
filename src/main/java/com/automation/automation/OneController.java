@@ -8,7 +8,7 @@ public class OneController {
 
     @GetMapping(path="/")
     String hello() {
-        return "Hello World, Spring Boot!";
+        return "Hello World, Spring Boot! New commit";
     }
 
 
